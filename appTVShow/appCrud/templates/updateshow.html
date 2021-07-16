@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Show </h1>
+    <div>
+        <form action="/shows/{{show.id}}/edit/success" method="post">
+            {% csrf_token %}
+            <label for="title">Title</label><br>
+            <input type="text" name="title" id="title" value="{{show.title}}"> <br>
+            <label for="network">Network</label>  <input type="text" id="network" name="network" value="{{show.network}}"> <br>
+            <label for="date">Release Date</label> <input type="date" name="date" id="date" value="{{date}}"> <br>
+            <label for="desc">Description</label> <br>
+            <textarea name="desc" id="desc" cols="30" rows="10">{{show.description}}</textarea> <br>
+            <input type="submit" value="Edit Show"> || <a href="javascript: history.go(-1)">Volver</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Show </h1>
+    <div>
+        <span>Title: {{infoShow.title}}</span> <br>
+        <span>Network: {{infoShow.network}}</span> <br>
+        <span> Release: {{infoShow.releaseDate}}</span> <br>
+        <span>Description: {{infoShow.description}}</span> <br>
+        <span>Last Update: {{infoShow.updateDate}}</span> <br>
+        <a href="/shows/{{infoShow.id}}/edit">Edit</a> || <a href="/shows/{{infoShow.id}}/delete">Delete</a>
+    </div>
+    
+</body>
+</html>
