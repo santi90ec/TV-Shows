@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-iw7c+vh^tl9ye9^o7@h=wgbf5f2l&)8ia*au$nko!c7n&ot(8^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dojo-test.us-east-2.elasticbeanstalk.com','127.0.0.1']
 
 
 # Application definition
